@@ -18,6 +18,7 @@ public final class App {
   private static final Logger log = LogManager.getFormatterLogger(App.class);
 
   public static void main(final String[] args) {
+    Thread.currentThread().setName("Main");
     hello("this", "is", "a", "test");
   }
 
