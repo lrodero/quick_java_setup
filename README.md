@@ -1,8 +1,6 @@
-Quick maven-based Java setup to be used:
-* For quick experimentation of new ideas/technologies in new branches
-* As the basis of _proper_ new Java/maven projects, by cloning this repo
+Experiments with [RxJava (2.0) library](https://github.com/ReactiveX/RxJava)
 
-The basic configuration is defined in `root/pom.xml`, which is intended to serve as a parent project. It includes dependencies to `Junit` and `log4j2`. `log4j2` configuration is located in `src/main/resources/log4j2.xml`. To change your project configuration (_e.g._ adding new dependencies) it is suggested to edit the project definition at `./pom.xml` and leave the parent project at `root/pom.xml` unchanged.
+This project is set using maven. Basic configuration is defined at `root/pom.xml` (it is advised not to change that file), which includes dependencies to `Junit` and `log4j2`. The configuration for the later is `src/main/resources/log4j2.xml`. All configuration specific for this project is set at `pom.xmlp`, _e.g._ the dependency to RxJava2 is set there.
 
 To execute main class (example):
 ```bash
