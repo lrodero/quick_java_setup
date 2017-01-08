@@ -9,7 +9,7 @@ To execute main class (example):
 $ mvn exec:java -Dexec.mainClass="org.lrodero.Experiment"
 ```
 
-To run code style checker (results are in `target/` folder):
+To run code style checker (results are in `target/site/checkstyle.html`):
 ```bash
 $ mvn checkstyle:checkstyle
 ```
